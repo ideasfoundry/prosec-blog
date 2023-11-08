@@ -79,14 +79,14 @@ module.exports = {
     // ALL links provided here will be added to <head> section of your site
     // with a rel='me' attribute so that you can verify their ownership
     // on Mastodon and other services that use this method of verification.
-    fediverse: [
-      {
-        username: 'JohnMastodon',
-        server: 'mastodon.social',
-        url: 'https://mastodon.social/@JohnMastodon',
-      },
-    ],
-  },
+    //fediverse: [
+    //  {
+    //    username: 'JohnMastodon',
+    //    server: 'mastodon.social',
+    //    url: 'https://mastodon.social/@JohnMastodon',
+    //  },
+    //],
+  //},
   // ---------------------------------------------------------------------------
   // Pages linked in the footer on the right side
   // ---------------------------------------------------------------------------
