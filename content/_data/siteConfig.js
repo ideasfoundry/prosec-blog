@@ -9,22 +9,22 @@ module.exports = {
     // OpenGraph tags and feeds.
     // Can also be used anywhere on the site as a Nunjucks variable:
     // {{ siteConfig.site.logo }}
-    title: 'Bliss',
+    title: 'Prosec',
     // Site description. Used in many places, including meta title,
     // OpenGraph tags and feeds.
     // It is also used as a fallback description if no custom description
     // is provided for a page / post.
-    description: 'Simple Eleventy blog template',
+    description: 'All things Security',
     // Production URL. Used by 'alwaysProductionUrl' filter.
     // If none is provided, relative paths will be used
     // and in some cases (like sitemap.xml) that is TOTALLY NOT what you want
-    url: process.env.URL || 'https://eleventy-bliss.vercel.app/',
+    url: process.env.URL || 'https://prosec.in',
     // Image used as a site logo. If none is provided, site title as text
     // will be displayed as fallback.
     // If you opt for text fallback, you may want to adjust
     // $menuBreakpoint variable in _variables.scss
     // so that site title and menu items remain within a single line.
-    logo: '/images/logo.svg',
+    logo: '/images/logo-pro.svg',
     // Default language of the site. Used in 'lang' attribute of <html> element
     // If none is provided, no 'lang' attribute will be used.
     language: 'en',
@@ -32,16 +32,16 @@ module.exports = {
     // with {% currentYear %} expression
     // so that you don't have to update the copyright year
     // in your footer by hand ever again :)
-    startYear: 2022,
+    startYear: 2023,
     // Generator information to display in <html> tag and the site footer.
     // Absolutely optional, but it will make Zach Leatherman happy :)
     // Also, it makes you eligible to be featured on Speedlify:
     // https://www.11ty.dev/speedlify/
-    generator: {
-      name: 'Eleventy',
-      version: packageJson.dependencies['@11ty/eleventy'].replace('^', ''),
-      url: 'https://11ty.dev',
-    },
+    //generator: {
+    //  name: 'Eleventy',
+    //  version: packageJson.dependencies['@11ty/eleventy'].replace('^', ''),
+    //  url: 'https://11ty.dev',
+    //},
     // Directionality of the element's text specified
     // with <html> 'dir' attribute. Available options:
     // 'ltr' - left to right (like English)
@@ -53,25 +53,25 @@ module.exports = {
     // super happy if you keep it intact :)
     // And if you decide to remove it after all, be sure to edit
     // content/_includes/footer.njk as well
-    template: {
-      name: 'Bliss',
-      url: 'https://github.com/lwojcik/eleventy-template-bliss',
-      credit: {
-        name: 'Offbeat Bits',
-        url: 'https://offbeatbits.com',
-      },
-    },
-  },
+    //template: {
+    //  name: 'Bliss',
+    //  url: 'https://github.com/lwojcik/eleventy-template-bliss',
+    //  credit: {
+    //    name: 'Offbeat Bits',
+    //    url: 'https://offbeatbits.com',
+    //  },
+    //},
+  //},
   // ---------------------------------------------------------------------------
   // Information about YOU, the site author
   // ---------------------------------------------------------------------------
   author: {
     // Your name. Self-explanatory I guess?
     // And you can use it anywhere on the site as {{ siteConfig.author.name }}
-    name: 'John Doe',
+    name: 'Hemant Gautam',
     // Your website URL. Used in the footer. Optional.
     // Doesn't have to be the same link as this site
-    url: 'https://eleventy-bliss.vercel.app/',
+    url: 'https://prosec.in',
     // Your fediverse links (e.g. Mastodon). You can provide more than one.
     // For the first account in this array your site will generate
     // .well-known/webfinger file for you so that you'll be searchable
@@ -92,16 +92,12 @@ module.exports = {
   // ---------------------------------------------------------------------------
   metaPages: [
     {
-      url: 'https://example.org/link-1/',
-      title: 'Example link 1',
+      url: 'https://www.linkedin.com/in/ideasfoundry/',
+      title: 'Linkedin',
     },
     {
-      url: 'https://example.org/link-2/',
-      title: 'Example link 2',
-    },
-    {
-      url: 'https://example.org/link-3/',
-      title: 'Example link 3',
+      url: 'https://twitter.com/ideasfoundry',
+      title: 'Twitter',
     },
   ],
   // ---------------------------------------------------------------------------
@@ -171,10 +167,8 @@ module.exports = {
   // won't be displayed at all.
   // ---------------------------------------------------------------------------
   shareButtons: [
-    'mastodon',
     'twitter',
     'linkedin',
-    'facebook',
     'hackernews',
     'clipboard',
   ],
@@ -253,29 +247,29 @@ module.exports = {
   // You can also check out https://yarn.social/ which extends Twtxt format
   // and provides web-based user-friendly interface
   // ---------------------------------------------------------------------------
-  twtxt: {
+ // twtxt: {
     // Your nickname on Twtxt
-    nick: 'eleventyBlissTemplate',
+ //   nick: 'eleventyBlissTemplate',
     // Path to Twtxt file, used as permalink in the template
-    path: '/twtxt.txt',
+ //   path: '/twtxt.txt',
     // Path to your Twtxt avatar
-    avatar: '/images/twtxt-avatar.png',
+ //   avatar: '/images/twtxt-avatar.png',
     // Separator used in Twtxt post contents between a title and a link
-    separator: ' - ',
+ //   separator: ' - ',
     // How many posts should be displayed in Twtxt file?
-    limit: 100,
+ //   limit: 100,
     // Title of your Twtxt.txt file used on /subscribe/ page
-    title: 'twtxt.txt (titles and links)',
-  },
+ //   title: 'twtxt.txt (titles and links)',
+ // },
   // ---------------------------------------------------------------------------
   // Site icons, used mostly for PWA manifest
   // ---------------------------------------------------------------------------
-  icons: {
-    ico: '/favicon.ico',
-    svg: '/favicon.svg',
-    i192: '/icon-192.png',
-    i512: '/icon-512.png',
-  },
+ // icons: {
+ //   ico: '/favicon.ico',
+ //   svg: '/favicon.svg',
+ //   i192: '/icon-192.png',
+ //   i512: '/icon-512.png',
+ // },
   // ---------------------------------------------------------------------------
   // Locale-based sorting options (mostly for tags)
   // ---------------------------------------------------------------------------
